@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SVBS Tours and Travels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="https://svbstoursandtravels.netlify.app/">
+        <img src="https://res.cloudinary.com/svbs/image/upload/v1771502248/SVBS-Logo_cmgae9.png" height="50px"
+          width="250px" alt="" style="border-radius: 10px;">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vehicles">Vehicles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- tours -->
+  <section id="tours">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Tour Packages</h2>
+      </div>
+      <h4 class="text-center text-warning mb-4">Mysuru Inside Places</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>🏰 Mysore Palace (Amba Vilas Palace)</h5>
+                One of India’s most magnificent royal residences and the most visited monument in
+                Karnataka after the Taj Mahal.
+              </div>
+            </div>
+            <h5>Mysore Palace</h5>
+            <p>Royal heritage and grandeur.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChange = document.querySelector('.auto-change');
+            const autoChangeImages = [
+              'https://karnatakatourism.org/_next/image/?url=https%3A%2F%2Fweb-cms.karnatakatourism.org%2Fwp-content%2Fuploads%2F2025%2F06%2FMysuru-Palace-banner-1920_1100.jpg&w=3840&q=75',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502366/mysore-palace_q3xonq.jpg',
+              'https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg',
+              'https://www.wendywutours.co.uk/resource/upload/2255/mysore-palace.jpg.webp',
+              'https://www.mysoretourism.org.in/images/v2/places-to-visit/mysore-maharaja-palace-header-mysore-tourism.jpg'
+            ];
+            let autoChangeIndex = 0;
+            // Set first image immediately
+            autoChange.src = autoChangeImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndex = (autoChangeIndex + 1) % autoChangeImages.length;
+              autoChange.setAttribute("src", autoChangeImages[autoChangeIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change-zoo" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5>Official name: Sri Chamarajendra Zoological Gardens</h5>
+                One of the oldest and most well-maintained zoos in India, famous for its clean layout, wide enclosures, and conservation efforts.
+                Initially created as a private royal menagerie, later opened to the public.
+                It is considered one of the cleanest zoos in India and attracts millions of visitors annually.
+              </div>
+            </div>
+            <h5>Mysore Zoo</h5>
+            <p>India’s oldest zoological garden.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeZoo = document.querySelector('.auto-change-zoo');
+            const autoChangeZooImages = [
+              'https://res.cloudinary.com/svbs/image/upload/v1771502369/mysore-zoo_qi1hof.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014987/mz3_ztjzjm.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502854/mysore_zoo_biw3sf.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014986/mz1_xqa7xm.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014987/mz2_ckg2nd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014988/mz4_rlojo3.webp'
+            ];
+            let autoChangeZooIndex = 0;
+            // Set first image immediately
+            autoChangeZoo.src = autoChangeZooImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeZooIndex = (autoChangeZooIndex + 1) % autoChangeZooImages.length;
+              autoChangeZoo.setAttribute("src", autoChangeZooImages[autoChangeZooIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change-ch" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5></h5>
+                Chamundi Hills rises about 1,000 meters above sea level and offers a full panoramic view of Mysuru city. 
+                dedicated to Goddess Chamundeshwari,The hill also features a 16-foot tall monolithic Nandi statue, 
+                carved from a single rock, which is one of the largest of its kind in India.
+              </div>
+            </div>
+            <h5>Chamundi Hills</h5>
+            <p>Divine temple and panoramic views.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeCh = document.querySelector('.auto-change-ch');
+            const autoChangeChImages = [
+              'https://res.cloudinary.com/svbs/image/upload/v1771502364/chamundi-hills_d0kpwu.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014975/chamundi_hills_7_eds3k3.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014973/chamundi_hills_1_lazu5q.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014974/chamundi_hills_4_pcuydx.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014974/chamundi_hills_3_azt4dk.jpg'
+            ];
+            let autoChangeChIndex = 0;
+            // Set first image immediately
+            autoChangeCh.src = autoChangeChImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeChIndex = (autoChangeChIndex + 1) % autoChangeChImages.length;
+              autoChangeCh.setAttribute("src", autoChangeChImages[autoChangeChIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="explore">
+          <a href="mysuru-inside-places.html" target="_blank"><button>Explore More Places Inside Mysuru</button></a>
+        </div>
+      </div>
+
+      <!-- Mysuru Nearby Places -->
+      <h4 class="text-center text-warning my-5">Mysuru Nearby Places</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change-crg" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                Coorg, also called Kodagu, is a beautiful hill region in Karnataka known for its coffee plantations and misty hills.
+                It is known as "Scotland of India"
+              </div>
+            </div>
+            <h5>Coorg</h5>
+            <p>Scenic plantations and waterfalls.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangecrg = document.querySelector('.auto-change-crg');
+            const autoChangecrgImages = [
+              'https://res.cloudinary.com/svbs/image/upload/v1771502365/coorg_tkgufz.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502740/coorg_x5jxsd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502778/1024px-Dubare_Elephant_Camp_20180319124920_dcomwv.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502773/Namdroling-Monastery_r7rlhr.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502742/Harangi_Dam_dyrm2f.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502731/Chelavara_Water_Falls_ephjkv.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502749/Mallalli-falls-Coorg_a08fwb.avif',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502781/abhey_falls_kyj2jq.jpg'
+            ];
+            let autoChangecrgIndex = 0;
+            // Set first image immediately
+            autoChangecrg.src = autoChangecrgImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangecrgIndex = (autoChangecrgIndex + 1) % autoChangecrgImages.length;
+              autoChangecrg.setAttribute("src", autoChangecrgImages[autoChangecrgIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change-oot" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                Ooty (Udhagamandalam), the "Queen of Hill Stations" in Tamil Nadu, is a premier tourist destination nestled in the Nilgiri Hills at 2,240 meters.
+                It is known for its cool climate, tea gardens, and beautiful Nilgiri hills.
+              </div>
+            </div>
+            <h5>Ooty</h5>
+            <p>Queen of Hills with lakes and gardens.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangeoot = document.querySelector('.auto-change-oot');
+            const autoChangeootImages = [
+              'https://res.cloudinary.com/svbs/image/upload/v1771502370/ooty_b6txcy.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014989/botanical-garden-1067x800_kndfc3.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014989/doddabetta_z1mt8i.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014989/Avalanche-Lake_lyi0s6.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772015001/toda_hut_m10aup.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014993/Shooting-Point-Ooty_adofs8.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014992/Pykara-Lake-1200x800_sh45di.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014992/mukurthi-national-park-_gb9m1c.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014991/moyar-river-1200x800_t69aqu.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1772014992/Ooty-Lake_mzlddw.webp'
+            ];
+            let autoChangeootIndex = 0;
+            // Set first image immediately
+            autoChangeoot.src = autoChangeootImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeootIndex = (autoChangeootIndex + 1) % autoChangeootImages.length;
+              autoChangeoot.setAttribute("src", autoChangeootImages[autoChangeootIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change-mmh" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+              </div>
+            </div>
+            <h5>MM Hills</h5>
+            <p>Devine, Wildlife and adventure trails.</p>
+            <button>Know More</button>
+          </div>
+          <script>
+            const autoChangemmh = document.querySelector('.auto-change-mmh');
+            const autoChangemmhImages = [
+              'https://pbs.twimg.com/media/Frl8KTtX0AEH_cS.jpg',
+              'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBl-JMU0gdR9vrdqfgFen1deAw-3LqFRSK2GqGXf9qyDZG1boZioyZBmZN0GUK78KbF0lazK_dUs5kVM9POnmbzZYVPJLvLwW8WuNiJzRUDoOBjxku6TOUM67voKUT8Z9bxhyphenhyphenC9PWadldw/w1200-h630-p-k-no-nu/MM+n+BR+Hills+007.jpg',
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiDG5YzYkMSKHQ1u8Qlp1DuDd8K47PT3F47A&s',
+              'https://static.toiimg.com/photo/52359328.cms',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502678/Hogenakkal-Falls_olovow.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502687/shivanasamudra_q0gzu5.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502681/rampura_wildlife_sancury_falls_l7knfe.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502659/gourishvara_befqls.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502677/himavad-gopalaswamy-temple-01_ukd2us.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1771502721/chamarajeshwara_temple_pnqlar.jpg'
+            ];
+            let autoChangemmhIndex = 0;
+            // Set first image immediately
+            autoChangemmh.src = autoChangemmhImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangemmhIndex = (autoChangemmhIndex + 1) % autoChangemmhImages.length;
+              autoChangemmh.setAttribute("src", autoChangemmhImages[autoChangemmhIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="explore">
+          <a href="./mysuru-nearby-places.html" target="_blank"><button>Explore More Places Nearby Mysuru</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- vehicles -->
+  <section id="vehicles">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Our Vehicles</h2>
+        <p>Choose from a wide range of premium and budget options.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="vehicle-card"><img
+              src="https://res.cloudinary.com/svbs/image/upload/v1771502166/Hatchback-4-seater_vze0sq.png">
+            <h5>Hatchback (4 Seater)</h5>
+            <p>Compact city rides — Alto, WagonR.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vehicle-card"><img
+              src="https://res.cloudinary.com/svbs/image/upload/v1771502172/sedan-4-seater_mit9rh.png">
+            <h5>Sedan (4–5 Seater)</h5>
+            <p>Comfortable drives — Swift Dzire, Etios.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vehicle-card"><img
+              src="https://res.cloudinary.com/svbs/image/upload/v1771502176/suv-innova_q3qwiu.png">
+            <h5>SUV / Innova (6–7 Seater)</h5>
+            <p>Spacious and premium — Innova Crysta, Ertiga.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vehicle-card"><img
+              src="https://res.cloudinary.com/svbs/image/upload/v1771502164/tempo-traveller_ky6dlu.png">
+            <h5>Tempo Traveller (9–15 Seater)</h5>
+            <p>Ideal for group or family trips.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vehicle-card"><img
+              src="https://res.cloudinary.com/svbs/image/upload/v1771502169/mini-bus_nomw1d.jpg">
+            <h5>Mini Bus (16–25 Seater)</h5>
+            <p>Perfect for small tours and functions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vehicle-card"><img
+              src="https://res.cloudinary.com/svbs/image/upload/v1771502165/coach_xmmwvg.avif">
+            <h5>Coach / Volvo (30–50 Seater)</h5>
+            <p>Luxury long-distance travel — AC seater/sleeper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>Owned by <strong style="font-size: 20px;">Mr. Srikanth C.S</strong>,
+          <br><br>SVBS Tours & Travels of Mysuru offers
+          <br><br>all varieties of vehicles with <span style="font-size: 25px; color: aqua;">AC </span>and <span
+            style="font-size: 25px; color: aqua;"> Non-AC</span> options
+          <br> <br> to make your journey enjoyable and safe.
+          <br> <br> <a href="#contact" class="btn">Contact Now for Queries</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- hero -->
+  <section class="hero" id="home">
+    <div class="container" data-aos="fade-up">
+      <h1>Welcome to <br> Sri Veera Bhadreshwara Swamy <br>(SVBS) <br> Tours & Travels</h1>
+      <p class="lead">Explore Mysuru and beyond with luxury, safety, and comfort.</p>
+      <a href="#tours" class="btn">Explore Now</a>
+    </div>
+  </section>
+  <script>
+    const hero = document.querySelector('.hero');
+    const images = [
+      'https://res.cloudinary.com/svbs/image/upload/v1771502164/anil_xizvdn.jpg',
+      'https://res.cloudinary.com/svbs/image/upload/v1771502174/sipayi_byvfjo.jpg',
+      'https://res.cloudinary.com/svbs/image/upload/v1771502168/maha_ejxjfl.jpg'
+    ];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      hero.style.backgroundImage = `url('${images[index]}')`;
+    }, 2000);
+  </script>
+
+  <!-- contact -->
+  <section id="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Contact us for bookings and enquiries.</p>
+      </div>
+      <div class="p-3">
+        <h5 class="text-warning">Address: <button
+            style="font-size: 20px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">click
+            below for quick access</button></h5>
+        <p><i class="fa fa-map text-warning"></i> <a href="https://maps.app.goo.gl/qGbN86onHVzcCCCt9?g_st=aw">
+            476/3 Chickkaharadanahalli, Pampapthi Road, Raghavendra Nagar Near - Ashokpuram Railway Station Backside
+            Srirampura Mysuru
+          </a></p>
+        <p><i class="fa fa-phone text-warning"></i><a href="tel:+917349396399">+91 7349396399</a></p>
+        <p><i class="fa fa-envelope text-warning"></i><a
+            href="mailto:svbstoursandtravels@gmail.com">svbstoursandtravels@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <p>© <span id="year"></span> <a target="_blank" href="./index.html"><button
+          style="font-size: 13px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">SVBS
+          Tours & Travels</button></a> All Rights Reserved <br>
+      Atelier by <a target="_blank" href="https://sharatechnovate.com/"><button
+          style="font-size: 15px;background: linear-gradient(90deg, #00ffff, #00bcd4, #0077ff);-webkit-background-clip: text;color: transparent; border: none;">Shara
+          Technovate</button></a></p>
+
+  </footer>
+
+  <!-- Floating WhatsApp & Call Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/917349396399" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+917349396399" class="call" title="Call Now"><i class="fa fa-phone"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
