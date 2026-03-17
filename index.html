@@ -268,6 +268,51 @@
         </div>
       </div>
     </div>
+
+  <!-- Mysuru Outside places -->
+    <section id="tours">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        </div>
+   <h4 class="text-center text-warning mo-6">Mysuru Outside Places</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changec-c" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                Chikmagalur is famous for its lush coffee plantations, misty hills, and the Western Ghats’ scenic beauty.
+              </div>
+            </div>
+            <h5>Chikmagaluru</h5>
+            <p>It is called as "Coffee land of Karnataka</p>
+            <button>Explore More</button>
+          </div>
+          <script>
+            const autoChangec = document.querySelector('.auto-changec-c');
+            const autoChangecImages = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773664583/z_point_5_tycxtl.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664582/z_point_4_qrzndd.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664577/sringeri_sharada_peetham1_we3jyg.webp',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664572/mullayanagiri_6_pn5ulq.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664572/mullayanagiri_5_h8bz6j.jpg',
+              'https://res.cloudinary.com/svbs/image/upload/v1773664560/Kudremukh_National_Park1_jen6sz.avif'
+              
+            ];
+            let autoChangecIndex = 0;
+            // Set first image immediately
+            autoChangec.src = autoChangecImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangecIndex = (autoChangecIndex + 1) % autoChangecImages.length;
+              autoChangec.setAttribute("src", autoChangecImages[autoChangecIndex]);
+            }, 2000);
+          </script>
+        </div>
+        <div class="explore">
+          <a href="./mysuru-outside-places.html" target="_blank"><button>Explore More Places Nearby Mysuru</button></a>
+      </div>
   </section>
 
   <!-- vehicles -->
